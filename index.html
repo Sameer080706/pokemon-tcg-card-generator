@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="style.css" />
+        <title>TCG Card</title>
+    </head>
+    <body>
+        <form>
+            <h1 style="margin: 2vh">POKEMON TCG CARD GENERATOR</h1>
+            <input
+                autofocus
+                type="text"
+                id="search"
+                placeholder="Search the Pokemon"
+                pattern="[A-Za-z]*"
+            />
+            <span>
+                <button style="grid-area: btn" id="btn" type="submit">
+                    Search
+                </button>
+                <button style="grid-area: random" id="random">
+                    Get Random
+                </button>
+            </span>
+        </form>
+        <div id="loader"></div>
+        <div id="container"></div>
+        <div class="footer">
+            <p>
+                *Data from
+                <a href="https://pokeapi.co" target="_blank">PokéAPI</a> and
+                <a href="https://pokemontcg.io" target="_blank"
+                    >Pokémon TCG API</a
+                >.
+            </p>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
