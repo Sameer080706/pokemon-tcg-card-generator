@@ -40,7 +40,7 @@ const getData = async name => {
             } else {
                 removeLoad();
                 for (let i = 0; i < data.length; i++) {
-                    display(data[i].images.small);
+                    display(data[i].images.large);
                 }
             }
         }
